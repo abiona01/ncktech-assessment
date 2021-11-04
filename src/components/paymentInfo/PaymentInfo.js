@@ -4,6 +4,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import {
+	CardBox,
 	ChildBox,
 	DetailsBox,
 	DetailsForm,
@@ -13,12 +14,12 @@ import {
 	InfoBox,
 	InfoChildA,
 	InfoChildB,
-	PaymentInfoBody,
 	ProductInfoBox,
 } from './PaymentInfo.style';
 import visa from '../../image/visa.jfif';
 import discover from '../../image/discover.png';
 import paypal from '../../image/paypal.png';
+import card from '../../image/card.png';
 
 export const PaymentInfo = () => {
 	return (
@@ -51,25 +52,48 @@ export const PaymentInfo = () => {
 					</InfoChildB>
 				</InfoBox>
 				<DetailsBox>
+					<CardBox>
+						<img src={card} alt='atm card' />
+					</CardBox>
 					<DetailsForm>
 						<FormBox>
 							<FormChild>
 								<Typography variant='body1'>Credit card number</Typography>
-								<TextField id='credit-card' variant='outlined' label='' />
+								<TextField
+									id='credit-card'
+									variant='outlined'
+									label='4324 5433 9382 1030'
+									disabled
+								/>
 							</FormChild>
 							<FormChild>
 								<Typography variant='body1'>Expiration date</Typography>
-								<TextField id='expiration-date' variant='outlined' label='' />
+								<TextField
+									id='expiration-date'
+									variant='outlined'
+									label='03/24'
+									disabled
+								/>
 							</FormChild>
 						</FormBox>
 						<FormBox>
 							<FormChild>
 								<Typography variant='body1'>Security code</Typography>
-								<TextField id='security-code' variant='outlined' label='' />
+								<TextField
+									id='security-code'
+									variant='outlined'
+									label='420'
+									disabled
+								/>
 							</FormChild>
 							<FormChild>
 								<Typography variant='body1'>Postal code</Typography>
-								<TextField id='postal-code' variant='outlined' label='' />
+								<TextField
+									id='postal-code'
+									variant='outlined'
+									label='10119'
+									disabled
+								/>
 							</FormChild>
 						</FormBox>
 						<FormChildB>

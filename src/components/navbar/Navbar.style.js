@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import Box from '@mui/material/Box';
 
+export const NavContainer = styled(Box)`
+	width: 100%;
+`;
 export const NavBox = styled(Box)`
 	width: 40%;
 	float: right;
